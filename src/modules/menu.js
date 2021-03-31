@@ -44,7 +44,7 @@ function createMenuItem(b_name, b_description) {
     burgerDescription.textContent = b_description;
 
     const burgerImg = document.createElement('img');
-    burgerImg.src = 'images/';
+    burgerImg.src = `images/burgers/${b_name.toLowerCase()}.jpg`;
     burgerImg.alt = `${b_name}`;
 
     menuItem.appendChild(burgerImg);
