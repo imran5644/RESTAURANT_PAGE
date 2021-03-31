@@ -1,4 +1,4 @@
-import homeSection from './modules/home';
+import homePage from './modules/home';
 
 function createHeader(){
 	const header = document.createElement('header');
@@ -22,6 +22,8 @@ function createNav() {
 	homebtn.textContent = 'Home';
 	homebtn.addEventListener('click', (e)=>{
 		if (e.target.classList.contains('active')) return;
+		setActiveButton('homebtn');
+		homePage();
 	})
 
 	const menubtn = document.createElement('button');
@@ -41,8 +43,25 @@ function createNav() {
 	navbar.appendChild(homebtn);
 	navbar.appendChild(menubtn);
 	navbar.appendChild(contactbtn);
-	navbar.appendChild(homeSection());
 	return navbar;
+}
+
+function setActiveButton(button){
+  const buttons = document.getElementsByClassName('navbar-btn');
+  
+	buttons.forEach((button) => {
+		if (button !== this){
+			button.classList.remove('active');
+		}
+	});
+	button.classList.add('active');
+}
+
+function createMain(){
+	const main = document.createElement('main');
+	main.classList.add('main');
+	main.setAttribute('id', 'main');
+	return main;
 }
 
 function createFooter(){
@@ -57,7 +76,11 @@ function createFooter(){
 function init(){
 	const content = document.getElementById('content');
 	content.appendChild(createHeader());
+	content.appendChild(createMain());
 	content.appendChild(createFooter());
+
+	setActiveButton(document.querySelector('.navbar-btn'));
+	homePage();
 }
 
 init();

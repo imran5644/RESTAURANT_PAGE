@@ -10,4 +10,11 @@ function homeSection() {
   return home;
 }
 
-export default homeSection;
+function homePage() {
+  const main = document.getElementById('main');
+
+  main.textContent = "";
+  main.appendChild(homeSection());
+}
+
+export default homePage();
