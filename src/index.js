@@ -1,3 +1,5 @@
+import homeSection from './modules/home';
+
 function createHeader(){
 	const content = document.querySelector('#content');
 	const header = document.createElement('header');
@@ -41,6 +43,7 @@ function createNav() {
 	navbar.appendChild(homebtn);
 	navbar.appendChild(menubtn);
 	navbar.appendChild(contactbtn);
+	navbar.appendChild(homeSection());
 	return navbar;
 }
 
