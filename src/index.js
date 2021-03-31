@@ -1,7 +1,6 @@
 import homeSection from './modules/home';
 
 function createHeader(){
-	const content = document.querySelector('#content');
 	const header = document.createElement('header');
 	header.classList.add('header');
 
@@ -9,7 +8,6 @@ function createHeader(){
 	restaurantName.classList.add('restaurant-name');
 	restaurantName.textContent = 'Special Burgers';
 
-	content.appendChild(header);
 	header.appendChild(restaurantName);
 	header.appendChild(createNav());
 	return header;
@@ -48,18 +46,18 @@ function createNav() {
 }
 
 function createFooter(){
-	const content = document.querySelector('#content');
   const footer = document.createElement('footer')
 	footer.classList.add('footer');
 
 	footer.textContent = 'Developed with ♥ by Imran Yousaf';
 
-	content.appendChild(footer);
 	return footer;
 }
 
+function init(){
+	const content = document.getElementById('content');
+	content.appendChild(createHeader());
+	content.appendChild(createFooter());
+}
 
-window.onload = function() {
-    createHeader();
-		createFooter();
-  }
+init();
