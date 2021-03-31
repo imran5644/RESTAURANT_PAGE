@@ -1,0 +1,1 @@
+document.body.onload=function(){const e=document.createElement("header");e.innerHTML="Special Burgers",document.body.appendChild(e)};
