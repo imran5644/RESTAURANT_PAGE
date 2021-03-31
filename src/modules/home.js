@@ -7,7 +7,15 @@ function homeSection() {
   burgerImage.alt ="burger-image"
 
   home.appendChild(burgerImage);
+  home.appendChild(createParagraph('Eat healthy and Natural Food'));
   return home;
+}
+
+
+function createParagraph(text) {
+  const para = document.createElement('p');
+  para.textContent = text;
+  return para;
 }
 
 function homePage() {

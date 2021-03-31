@@ -1,4 +1,5 @@
 import homePage from './modules/home';
+import menuPage from './modules/menu';
 
 function createHeader(){
 	const header = document.createElement('header');
@@ -20,23 +21,25 @@ function createNav() {
 	const homebtn = document.createElement('button');
 	homebtn.classList.add('navbar-btn');
 	homebtn.textContent = 'Home';
-	homebtn.addEventListener('click', (e)=>{
+	homebtn.addEventListener('click', (e) => {
 		if (e.target.classList.contains('active')) return;
-		// setActiveButton('homebtn');
-		// homePage();
+		setActiveButton(homebtn);
+		homePage();
 	})
 
 	const menubtn = document.createElement('button');
 	menubtn.classList.add('navbar-btn');
 	menubtn.textContent = 'Menu';
-	menubtn.addEventListener('click', (e)=>{
+	menubtn.addEventListener('click', (e) => {
 		if (e.target.classList.contains('active')) return;
+		setActiveButton(menubtn);
+		menuPage();
 	})
 
 	const contactbtn = document.createElement('button');
 	contactbtn.classList.add('navbar-btn');
 	contactbtn.textContent = 'Contact';
-	contactbtn.addEventListener('click', (e)=>{
+	contactbtn.addEventListener('click', (e) => {
 		if (e.target.classList.contains('active')) return;
 	})
 
