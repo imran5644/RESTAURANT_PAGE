@@ -44,7 +44,19 @@ function createNav() {
 	return navbar;
 }
 
+function createFooter(){
+	const content = document.querySelector('#content');
+  const footer = document.createElement('footer')
+	footer.classList.add('footer');
+
+	footer.textContent = 'Developed with ♥ by Imran Yousaf';
+
+	content.appendChild(footer);
+	return footer;
+}
+
 
 window.onload = function() {
     createHeader();
+		createFooter();
   }
