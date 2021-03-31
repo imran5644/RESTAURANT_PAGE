@@ -18,21 +18,21 @@ function createNav() {
 	navbar.classList.add('navbar');
 
 	const homebtn = document.createElement('button');
-	homebtn.classList.add('home-btn');
+	homebtn.classList.add('navbar-btn');
 	homebtn.textContent = 'Home';
 	homebtn.addEventListener('click', (e)=>{
 		if (e.target.classList.contains('active')) return;
 	})
 
 	const menubtn = document.createElement('button');
-	menubtn.classList.add('menu-btn');
+	menubtn.classList.add('navbar-btn');
 	menubtn.textContent = 'Menu';
 	menubtn.addEventListener('click', (e)=>{
 		if (e.target.classList.contains('active')) return;
 	})
 
 	const contactbtn = document.createElement('button');
-	contactbtn.classList.add('contact-btn');
+	contactbtn.classList.add('navbar-btn');
 	contactbtn.textContent = 'Contact';
 	contactbtn.addEventListener('click', (e)=>{
 		if (e.target.classList.contains('active')) return;
