@@ -17,4 +17,4 @@ function homePage() {
   main.appendChild(homeSection());
 }
 
-export default homePage();
+export default homePage;

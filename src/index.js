@@ -22,8 +22,8 @@ function createNav() {
 	homebtn.textContent = 'Home';
 	homebtn.addEventListener('click', (e)=>{
 		if (e.target.classList.contains('active')) return;
-		setActiveButton('homebtn');
-		homePage();
+		// setActiveButton('homebtn');
+		// homePage();
 	})
 
 	const menubtn = document.createElement('button');
@@ -47,7 +47,7 @@ function createNav() {
 }
 
 function setActiveButton(button){
-  const buttons = document.getElementsByClassName('navbar-btn');
+  const buttons = document.querySelectorAll('.navbar-btn');
   
 	buttons.forEach((button) => {
 		if (button !== this){
