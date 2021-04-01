@@ -18,9 +18,11 @@ const createParagraph = (text, headtext) => {
   paraItem.classList.add('paraItem');
 
   const para = document.createElement('p');
+  para.classList.add('para');
   para.textContent = headtext;
 
   const para2 = document.createElement('p');
+  para2.classList.add('para2');
   para2.textContent = text;
 
   paraItem.appendChild(para);
