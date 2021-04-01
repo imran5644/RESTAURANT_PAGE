@@ -9,7 +9,7 @@ const createMenuItem = (bName, bDescription) => {
   burgerDescription.textContent = bDescription;
 
   const burgerImg = document.createElement('img');
-  burgerImg.src = `images/burgers/${bName.toLowerCase()}.jpg`;
+  burgerImg.src = `images/${bName.toLowerCase()}.jpg`;
   burgerImg.alt = `${bName}`;
 
 
