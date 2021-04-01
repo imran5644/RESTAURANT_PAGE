@@ -3,14 +3,14 @@ const homeSection = () => {
   home.classList.add('home');
 
   const burgerImage = document.createElement('img');
-  burgerImage.src ="images/burger.jpg"
-  burgerImage.alt ="burger-image"
+  burgerImage.src = 'images/burger.jpg';
+  burgerImage.alt = 'burger-image';
 
   home.appendChild(createParagraph('Eat healthy and Natural Food', 'Discover your taste'));
   home.appendChild(burgerImage);
 
   return home;
-}
+};
 
 
 const createParagraph = (text, headtext) => {
@@ -29,13 +29,13 @@ const createParagraph = (text, headtext) => {
   paraItem.appendChild(para2);
 
   return paraItem;
-}
+};
 
 const homePage = () => {
   const main = document.getElementById('main');
 
-  main.textContent = "";
+  main.textContent = '';
   main.appendChild(homeSection());
-}
+};
 
 export default homePage;
