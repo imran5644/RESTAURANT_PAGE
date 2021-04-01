@@ -25,32 +25,32 @@ const createMenu = () => {
   menu.classList.add('menu');
 
   menu.appendChild(createMenuItem(
-    'Barbecue Burger',
+    'BarbecueBurger',
     'Prepared with ground beef, mixed with onions and barbecue sauce, and then grilled.',
   ));
 
   menu.appendChild(createMenuItem(
-    'Butter Burger',
+    'ButterBurger',
     'Burgers are often made with a buttered bun, butter as one of the ingredients of the patty or with a pat of butter on top of the burger patty',
   ));
 
   menu.appendChild(createMenuItem(
-    'Cheese Burger',
+    'CheeseBurger',
     'Hamburger accompanied with melted cheese. The cheese is usually sliced, then added a short time before the hamburger finishes cooking to allow it to melt. ',
   ));
 
   menu.appendChild(createMenuItem(
-    'Kimchi Burger',
+    'KimchiBurger',
     'A hamburger that includes kimchi in its preparation',
   ));
 
   menu.appendChild(createMenuItem(
-    'Rice Burger',
+    'RiceBurger',
     'Style of hamburger in which the bun is a compressed cake of rice.',
   ));
 
   menu.appendChild(createMenuItem(
-    'Veggie Burger',
+    'VeggieBurger',
     'Textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties.',
   ));
 
