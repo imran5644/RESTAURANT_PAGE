@@ -3,31 +3,31 @@ const createMenu = () => {
     menu.classList.add('menu');
 
     menu.appendChild(createMenuItem(
-        'Barbecue burger', 
-        'repared with ground beef, mixed with onions and barbecue sauce, and then grilled. Once the meat has been turned once, barbecue sauce is spread on top and grilled until the sauce caramelizes. The bread bun is buttered and also spread with a light layer of barbecue sauce, then toasted on the grill.'));
+        'Barbecue Burger', 
+        'Prepared with ground beef, mixed with onions and barbecue sauce, and then grilled.'));
     
     menu.appendChild(createMenuItem(
-        'Butter burger', 
-        'burgers are often made with a buttered bun, butter as one of the ingredients of the patty or with a pat of butter on top of the burger patty'));
+        'Butter Burger', 
+        'Burgers are often made with a buttered bun, butter as one of the ingredients of the patty or with a pat of butter on top of the burger patty'));
     
     menu.appendChild(createMenuItem(
-        'Cheeseburger',
+        'Cheese Burger',
         'Hamburger accompanied with melted cheese. The cheese is usually sliced, then added a short time before the hamburger finishes cooking to allow it to melt. '
     ));
 
     menu.appendChild(createMenuItem(
-        'Kimchi burger',
+        'Kimchi Burger',
         'A hamburger that includes kimchi in its preparation'
     ));
 
     menu.appendChild(createMenuItem(
-        'Rice burger',
-        'Style of hamburger in which the bun is a compressed cake of rice. The MOS Burger fast-food restaurant chain introduced the rice burger in 1987,and it has become a popular food item'
+        'Rice Burger',
+        'Style of hamburger in which the bun is a compressed cake of rice.'
     ));
 
     menu.appendChild(createMenuItem(
-        'Veggie burger',
-        'Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties.'
+        'Veggie Burger',
+        'Textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties.'
     ));
 
     return menu;
@@ -47,8 +47,9 @@ const createMenuItem = (b_name, b_description) => {
     burgerImg.src = `images/burgers/${b_name.toLowerCase()}.jpg`;
     burgerImg.alt = `${b_name}`;
 
-    menuItem.appendChild(burgerImg);
+    
     menuItem.appendChild(burgerName);
+    menuItem.appendChild(burgerImg);
     menuItem.appendChild(burgerDescription);
 
     return menuItem;

@@ -56,3 +56,33 @@ header {
       margin-top: 12%;
       color: lightpink;
   }
+
+
+/*     Contact Page      */
+
+.menu {
+    color: var(--font-color-pink);
+    display: grid;
+    grid-template-columns: 30% 30%;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    margin-left: 85%;
+    width: 50%;
+}
+
+.menuItem h1 {
+  font-size: 20px;
+}
+
+.menuItem img {
+    width: 250px;
+    height: 250px;
+}
+
+.menuItem p {
+    font-size: 15px;
+    width: 300px;
+}
