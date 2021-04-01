@@ -1,4 +1,4 @@
-function homeSection() {
+const homeSection = () => {
   const home = document.createElement('div');
   home.classList.add('home');
 
@@ -12,13 +12,13 @@ function homeSection() {
 }
 
 
-function createParagraph(text) {
+const createParagraph = (text) => {
   const para = document.createElement('p');
   para.textContent = text;
   return para;
 }
 
-function homePage() {
+const homePage = () => {
   const main = document.getElementById('main');
 
   main.textContent = "";

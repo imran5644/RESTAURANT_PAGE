@@ -1,4 +1,4 @@
-function createContact() {
+const createContact = () =>  {
   const contact = document.createElement('div');
   contact.classList.add('contact');
 
@@ -6,7 +6,7 @@ function createContact() {
   return contact;
 }
 
-function createContactItems(address, phone_no, day, time) {
+const createContactItems = (address, phone_no, day, time) => {
   const contactItems = document.createElement('div');
   contactItems.classList.add('contactItems');
 
@@ -31,7 +31,7 @@ function createContactItems(address, phone_no, day, time) {
 
 }
 
-function contactPage() {
+const contactPage = () => {
   const main = document.getElementById('main');
 
   main.textContent = '';

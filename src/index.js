@@ -2,7 +2,7 @@ import homePage from './modules/home';
 import menuPage from './modules/menu';
 import contactPage from './modules/contact';
 
-function createHeader(){
+const createHeader = () => {
 	const header = document.createElement('header');
 	header.classList.add('header');
 
@@ -15,7 +15,7 @@ function createHeader(){
 	return header;
 }
 
-function createNav() {
+const createNav = () => {
   const navbar = document.createElement('nav');
 	navbar.classList.add('navbar');
 
@@ -52,7 +52,7 @@ function createNav() {
 	return navbar;
 }
 
-function setActiveButton(button){
+const setActiveButton = (button) => {
   const buttons = document.querySelectorAll('.navbar-btn');
   
 	buttons.forEach((button) => {
@@ -63,14 +63,14 @@ function setActiveButton(button){
 	button.classList.add('active');
 }
 
-function createMain(){
+const createMain = () => {
 	const main = document.createElement('main');
 	main.classList.add('main');
 	main.setAttribute('id', 'main');
 	return main;
 }
 
-function createFooter(){
+const createFooter = () => {
   const footer = document.createElement('footer')
 	footer.classList.add('footer');
 
@@ -79,7 +79,7 @@ function createFooter(){
 	return footer;
 }
 
-function init(){
+const init = () => {
 	const content = document.getElementById('content');
 	content.appendChild(createHeader());
 	content.appendChild(createMain());
