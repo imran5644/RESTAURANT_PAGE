@@ -58,7 +58,7 @@ header {
   }
 
 
-/*     Contact Page      */
+/*     Menu Page      */
 
 .menu {
     color: var(--font-color-pink);
@@ -84,5 +84,15 @@ header {
 
 .menuItem p {
     font-size: 15px;
-    width: 300px;
+    width: 230px;
+}
+
+
+/*     Contact Page      */
+
+.contactItems {
+  width: 100%;
+  color: var(--font-color-pink);
+  font-size: 18px;
+  text-align: center;
 }
