@@ -1,5 +1,6 @@
 import homePage from './modules/home';
 import menuPage from './modules/menu';
+import contactPage from './modules/contact';
 
 function createHeader(){
 	const header = document.createElement('header');
@@ -41,6 +42,8 @@ function createNav() {
 	contactbtn.textContent = 'Contact';
 	contactbtn.addEventListener('click', (e) => {
 		if (e.target.classList.contains('active')) return;
+		setActiveButton(contactbtn);
+		contactPage();
 	})
 
 	navbar.appendChild(homebtn);
