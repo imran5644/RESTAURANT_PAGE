@@ -2,17 +2,15 @@ import homePage from './modules/home';
 import menuPage from './modules/menu';
 import contactPage from './modules/contact';
 
-const createHeader = () => {
-  const header = document.createElement('header');
-  header.classList.add('header');
+const setActiveButton = (button) => {
+  const buttons = document.querySelectorAll('.navbar-btn');
 
-  const restaurantName = document.createElement('h1');
-  restaurantName.classList.add('restaurant-name');
-  restaurantName.textContent = 'Special Burgers';
-
-  header.appendChild(restaurantName);
-  header.appendChild(createNav());
-  return header;
+  buttons.forEach((button) => {
+    if (button !== this) {
+      button.classList.remove('active');
+    }
+  });
+  button.classList.add('active');
 };
 
 const createNav = () => {
@@ -52,16 +50,19 @@ const createNav = () => {
   return navbar;
 };
 
-const setActiveButton = (button) => {
-  const buttons = document.querySelectorAll('.navbar-btn');
+const createHeader = () => {
+  const header = document.createElement('header');
+  header.classList.add('header');
 
-  buttons.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove('active');
-    }
-  });
-  button.classList.add('active');
+  const restaurantName = document.createElement('h1');
+  restaurantName.classList.add('restaurant-name');
+  restaurantName.textContent = 'Special Burgers';
+
+  header.appendChild(restaurantName);
+  header.appendChild(createNav());
+  return header;
 };
+
 
 const createMain = () => {
   const main = document.createElement('main');

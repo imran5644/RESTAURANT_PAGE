@@ -1,18 +1,3 @@
-const homeSection = () => {
-  const home = document.createElement('div');
-  home.classList.add('home');
-
-  const burgerImage = document.createElement('img');
-  burgerImage.src = 'images/burger.jpg';
-  burgerImage.alt = 'burger-image';
-
-  home.appendChild(createParagraph('Eat healthy and Natural Food', 'Discover your taste'));
-  home.appendChild(burgerImage);
-
-  return home;
-};
-
-
 const createParagraph = (text, headtext) => {
   const paraItem = document.createElement('div');
   paraItem.classList.add('paraItem');
@@ -29,6 +14,20 @@ const createParagraph = (text, headtext) => {
   paraItem.appendChild(para2);
 
   return paraItem;
+};
+
+const homeSection = () => {
+  const home = document.createElement('div');
+  home.classList.add('home');
+
+  const burgerImage = document.createElement('img');
+  burgerImage.src = 'images/burger.jpg';
+  burgerImage.alt = 'burger-image';
+
+  home.appendChild(createParagraph('Eat healthy and Natural Food', 'Discover your taste'));
+  home.appendChild(burgerImage);
+
+  return home;
 };
 
 const homePage = () => {

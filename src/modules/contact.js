@@ -1,29 +1,21 @@
-const createContact = () => {
-  const contact = document.createElement('div');
-  contact.classList.add('contact');
-
-  contact.appendChild(createContactItems('Contact Us', 'Address: 1011 Oakwood Ave NE, Massillon, OH 44646', 'Phone No: (999)-444-09090', 'Working Days: Mon-Fri', 'Time: 08:00am-09:00pm'));
-  return contact;
-};
-
-const createContactItems = (contact_detail, address, phone_no, day, time) => {
+const createContactItems = (contactDetail, address, phoneNo, day, time) => {
   const contactItems = document.createElement('div');
   contactItems.classList.add('contactItems');
 
-  const contact_us = document.createElement('h1');
-  contact_us.textContent = contact_detail;
+  const contactUs = document.createElement('h1');
+  contactUs.textContent = contactDetail;
 
-  const b_address = document.createElement('p');
-  b_address.textContent = address;
+  const bAddress = document.createElement('p');
+  bAddress.textContent = address;
 
-  const b_phone_no = document.createElement('p');
-  b_phone_no.textContent = phone_no;
+  const bPhoneNo = document.createElement('p');
+  bPhoneNo.textContent = phoneNo;
 
-  const b_day = document.createElement('p');
-  b_day.textContent = day;
+  const bDay = document.createElement('p');
+  bDay.textContent = day;
 
-  const b_time = document.createElement('p');
-  b_time.textContent = time;
+  const bTime = document.createElement('p');
+  bTime.textContent = time;
 
   const restaurantLocation = document.createElement('img');
   restaurantLocation.src = 'images/location.JPG';
@@ -43,19 +35,28 @@ const createContactItems = (contact_detail, address, phone_no, day, time) => {
   telephoneIcon.classList.add('fa-phone');
 
 
-  contactItems.appendChild(contact_us);
+  contactItems.appendChild(contactUs);
   contactItems.appendChild(locationIcon);
-  contactItems.appendChild(b_address);
+  contactItems.appendChild(bAddress);
   contactItems.appendChild(telephoneIcon);
-  contactItems.appendChild(b_phone_no);
+  contactItems.appendChild(bPhoneNo);
 
-  contactItems.appendChild(b_day);
+  contactItems.appendChild(bDay);
   contactItems.appendChild(clockIcon);
-  contactItems.appendChild(b_time);
+  contactItems.appendChild(bTime);
   contactItems.appendChild(restaurantLocation);
 
   return contactItems;
 };
+
+const createContact = () => {
+  const contact = document.createElement('div');
+  contact.classList.add('contact');
+
+  contact.appendChild(createContactItems('Contact Us', 'Address: 1011 Oakwood Ave NE, Massillon, OH 44646', 'Phone No: (999)-444-09090', 'Working Days: Mon-Fri', 'Time: 08:00am-09:00pm'));
+  return contact;
+};
+
 
 const contactPage = () => {
   const main = document.getElementById('main');

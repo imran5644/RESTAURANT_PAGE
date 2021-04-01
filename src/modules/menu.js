@@ -1,3 +1,25 @@
+const createMenuItem = (bName, bDescription) => {
+  const menuItem = document.createElement('div');
+  menuItem.classList.add('menuItem');
+
+  const burgerName = document.createElement('h1');
+  burgerName.textContent = bName;
+
+  const burgerDescription = document.createElement('p');
+  burgerDescription.textContent = bDescription;
+
+  const burgerImg = document.createElement('img');
+  burgerImg.src = `images/burgers/${bName.toLowerCase()}.jpg`;
+  burgerImg.alt = `${bName}`;
+
+
+  menuItem.appendChild(burgerName);
+  menuItem.appendChild(burgerImg);
+  menuItem.appendChild(burgerDescription);
+
+  return menuItem;
+};
+
 const createMenu = () => {
   const menu = document.createElement('div');
   menu.classList.add('menu');
@@ -35,27 +57,6 @@ const createMenu = () => {
   return menu;
 };
 
-const createMenuItem = (b_name, b_description) => {
-  const menuItem = document.createElement('div');
-  menuItem.classList.add('menuItem');
-
-  const burgerName = document.createElement('h1');
-  burgerName.textContent = b_name;
-
-  const burgerDescription = document.createElement('p');
-  burgerDescription.textContent = b_description;
-
-  const burgerImg = document.createElement('img');
-  burgerImg.src = `images/burgers/${b_name.toLowerCase()}.jpg`;
-  burgerImg.alt = `${b_name}`;
-
-
-  menuItem.appendChild(burgerName);
-  menuItem.appendChild(burgerImg);
-  menuItem.appendChild(burgerDescription);
-
-  return menuItem;
-};
 
 const menuPage = () => {
   const main = document.getElementById('main');
