@@ -25,12 +25,35 @@ const createContactItems = (contact_detail, address, phone_no, day, time) => {
   const b_time = document.createElement('p');
   b_time.textContent = time;
 
-  
+  const restaurantLocation = document.createElement("img");
+  restaurantLocation.src = "images/location.JPG";
+  restaurantLocation.alt = "Special Burger location";
+
+  const locationIcon = document.createElement("i");
+  locationIcon.classList.add("fas");
+  locationIcon.classList.add("fa-map-marker-alt");
+
+  const clockIcon = document.createElement("i");
+  clockIcon.classList.add("fas");
+  clockIcon.classList.add("fa-clock");
+
+
+  const telephoneIcon = document.createElement("i");
+  telephoneIcon.classList.add("fa");
+  telephoneIcon.classList.add("fa-phone");
+
+
+
   contactItems.appendChild(contact_us);
+  contactItems.appendChild(locationIcon);
   contactItems.appendChild(b_address);
+  contactItems.appendChild(telephoneIcon);
   contactItems.appendChild(b_phone_no);
+  
   contactItems.appendChild(b_day);
+  contactItems.appendChild(clockIcon);
   contactItems.appendChild(b_time);
+  contactItems.appendChild(restaurantLocation);
 
   return contactItems;
 
