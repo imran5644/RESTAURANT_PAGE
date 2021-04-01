@@ -6,16 +6,27 @@ const homeSection = () => {
   burgerImage.src ="images/burger.jpg"
   burgerImage.alt ="burger-image"
 
+  home.appendChild(createParagraph('Eat healthy and Natural Food', 'Discover your taste'));
   home.appendChild(burgerImage);
-  home.appendChild(createParagraph('Eat healthy and Natural Food'));
+
   return home;
 }
 
 
-const createParagraph = (text) => {
+const createParagraph = (text, headtext) => {
+  const paraItem = document.createElement('div');
+  paraItem.classList.add('paraItem');
+
   const para = document.createElement('p');
-  para.textContent = text;
-  return para;
+  para.textContent = headtext;
+
+  const para2 = document.createElement('p');
+  para2.textContent = text;
+
+  paraItem.appendChild(para);
+  paraItem.appendChild(para2);
+
+  return paraItem;
 }
 
 const homePage = () => {
