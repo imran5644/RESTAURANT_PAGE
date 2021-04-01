@@ -30,6 +30,7 @@ header {
       color: var(--background-light);
       font-weight: 700;
       font-size: 14px;
+      outline: none;
   }
 
   /*     Home Page      */
@@ -97,14 +98,30 @@ header {
 /*     Contact Page      */
 
 .contact {
-  height: 500px;
-}
-
-.contactItems {
+  height: 900px;
   width: 100%;
   color: var(--font-color-pink);
   font-size: 18px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+}
+
+.contactItems {
+  height: 820px;
+  width: 50%;
+  background-color: var(--border-color);
+  margin-top: 30px;
+  
+}
+
+.contactItems h1 {
+  margin-top: 30px;
+}
+
+.contactItems img {
+  width: 60%;
+  height: 45%;
 }
 
 /*     Footer     */
