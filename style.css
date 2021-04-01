@@ -1,0 +1,58 @@
+:root {
+    --font-color-pink: lightpink;;
+    --font-color-dark: #aaa;
+    --border-color: #222;
+    --background-light: rgba(0, 0, 0, 0.6);
+    --background-light-hover: rgba(99, 99, 99, 0.4);
+    --background-dark: rgba(0, 0, 0, 0.9);
+  }
+
+body {
+    font-family: "Montserrat", cursive;
+    font-size: 1.6rem;
+    color: var(--font-color-white);
+    background-color: var(--background-light);
+  }
+
+/*     Header     */
+
+header {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--font-color-pink);
+  }
+
+  .navbar button {
+      height: 5%;
+      background-color: var(--font-color-pink);
+      width: 10%;
+      height: 40px;
+      border-radius: 10%;
+      margin-bottom: 2%;
+      color: var(--background-light);
+      font-weight: 700;
+      font-size: 14px;
+  }
+
+  /*     Home Page      */
+  
+ .home img {
+    display: block;
+    width: 45%;
+    height: 450px;
+    margin-left: 20%;
+  }
+
+  .home  {
+    display: flex;
+  }
+
+  .home p {
+      margin-left: 30%;
+      width: 100%;
+  }
+
+  .paraItem {
+      margin-top: 12%;
+      color: lightpink;
+  }
