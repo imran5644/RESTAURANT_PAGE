@@ -50,6 +50,7 @@ To make any change,
 - GitHub: [@imran5644](https://github.com/imran5644)
 - Twitter: [@imran56444](https://twitter.com/imran56444)
 - LinkedIn: [Imran Yousaf](https://www.linkedin.com/in/imran-yousaf5644/) 
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome! Start by:
