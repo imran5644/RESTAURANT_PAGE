@@ -3,6 +3,9 @@
 <p align="center">This project is the practice for DOM manipulation with JavaScript and Webpack. This project is A landing page for a restaurant where you can visit and see the menu that is available on the restaurant.I used Javascript, HTML5, CSS3, Font Awesome to implement it</p>
 
 
+![screenshot](./docs/screenshot_home.png)
+![screenshot](./docs/screenshot_menu.png)
+
 ## Live Link Demo
 
 [Live Link Demo](https://imran5644.github.io/RESTAURANT_PAGE/)
@@ -22,6 +25,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - Text Editor (VSCode is suggested.)
+- node: v12.19.0
 
 
 ### Setup
@@ -32,11 +36,6 @@ To get a local copy up and running follow these simple example steps.
 - Use `cd <file-path>`
 - Run `git clone https://github.com/imran5644/RESTAURANT_PAGE.git`
 
-
-
-To make any change,
-
-- Open related file by using text editor.
 
 ## Usage
 
